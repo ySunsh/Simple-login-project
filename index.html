@@ -7,36 +7,24 @@
         </script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <title>Base</title>
-        <link rel="shortcut icon" href="./img/gato.webp" type="image/x-icon">
+        <title>Sign Up Page</title>
+        <link rel="shortcut icon" href="./img/finger-print.svg" type="image/x-icon">
     </head>
     <body>
-      <div class = main>
-        <form>
-          <div class = user-img>
-            <img src="./img/user-icon.png" alt="User" class="avatar">
-          </div>
-          <div class="form-container">
-
-
-            <label for="name-container"><b>Username</b></label>
-            <input type="text" placeholder = "Username" name="name-container" required>
-            
-            <label for="Password"><b>Password</b></label>
-            <input type="password" placeholder = "Password"name="Password" required>
-
-            <button type="submit">Login</button>
-
-            <label type = "checkbox" checked = checked name = remeber-box> 
-            Remember me
-            </label>
-          </div>
-          <div class = container>
-            <button type = button class = cancelbttn>Cancel</button>
-            <span class = pws > Forgot <a href= # >password?</a></span>
-          </div>
-        </form>
-      </div>
+         <section class = base >
+            <div class = main>
+                <div class = "login-main">
+                    <div class="icon">
+                        <a href="https://login-page-dusky.vercel.app" id = "href-finger"><ion-icon name="finger-print"></ion-icon></a>
+                        
+                    </div>
+                    <input class = name-main type="text" placeholder = "Username" name="name-container" required>
+                    <input class = "password-main"type="password" placeholder = "Password"name="Password" required>
+                    <button class = sign-button>Sign in</button>
+        </input>
+            </div>
+        </div>
+    </section>
         
       <script src="./script.js"></script>
     </body>
