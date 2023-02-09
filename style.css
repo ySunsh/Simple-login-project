@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;600;700&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%27);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;600;700&display=swap%27);
 
 ::-webkit-scrollbar-thumb {
   background-color: #333333;
@@ -30,77 +30,102 @@
   border: 0;
   user-select: none;
   scroll-behavior: smooth;
-  background: #333333
 }
 
 
+body {
+  background: radial-gradient(circle, rgb(68, 68, 68) 0%, rgb(0, 0, 0) 100%);
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(145, 145, 145) 100%) ;
+}
 
 .main{
   display: flex;
-  align-items: center;
+  height: 100%;
+  width: 100%;
   justify-content: center;
-
-} 
-
-
-
-input[type = text]{
-  width: 80%;
-  padding: 12px;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+  align-items: center;
 }
 
-input[type = password]{
-  width: 80%;
-  padding: 12px;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+.login-main {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  border-radius: 15px;
+  width: 720px;
+  height: 600px;
+  padding: 60px;
+  filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 1));
+  align-items: center;
+  position: absolute;
 }
 
-button{
+.icon{
+    color: #00c853ce;
+    filter: drop-shadow(0px 0px 10px #39FF14) ;
+    font-size: 90px;
+}
+
+a{
+  color: inherit; 
+}
+
+
+
+
+
+.name-main{
+  color: rgb(255, 255, 255);
+  margin-top: 60px;
+  height: 60px;
+  width: 75%;
+  display: block;
+  border: 1.5px solid #333;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  background-color: rgba(30, 30, 30);
+}
+
+.password-main{
+  color: rgb(255, 255, 255);
+  margin-top: 15px;
+  height: 60px;
+  width: 75%;
+  font-size: 1.2rem;
+  display: block;
+  border: 1px solid #333;
+  border-radius: 12px;
+  box-sizing: border-box;
+  background-color: rgba(30, 30, 30);
+}
+
+
+.sign-button{
   background-color: #04AA6D;
+  filter: drop-shadow(0px 0px 5px #04AA6D);
   color: white;
-  padding: 14px 20px;
+  padding: 21px 30px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 50%;
+  Font-size: 1rem;
+  border-radius: 15px;
+  width: 75%;
 }
 
-button:hover{
+
+.sign-button:hover{
+  background-color: #007047;
+  filter: drop-shadow(0px 0px 5px black);
+  transition: 0.8s;
   opacity: 0.8;
 }
 
-.cancelbttn{
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
 
-.user-img{
-  text-align: center;
-}
-
-.form-container{
-  padding: 16px;
-}
-
-span.psw{
-  float: right;
-  padding-top: 16px;
-}
-
-@media screen and (max-width: 300px) {
-  span.psw {
-    display: block;
-    float: none;
-  }
-  .cancelbtn {
-    width: 100%;
-  }
+label{
+  display: flex;
+  align-items: center;
+  justify-content:start;
+  font-size: 20px;
+  color: #04AA6D;
+  width: 75%;
 }
